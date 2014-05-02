@@ -1,0 +1,286 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: #eee;
+	width: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+.page-content {
+	width: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	background: #FFF;
+}
+
+.yllw {
+	background: #FFF;
+	font-family: 'bebas';
+	font-size: 20px;
+	color: #555;
+	text-indent: 20px;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	line-height: 40px;
+}
+
+.yllw a {
+	background: #f9585d;
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	width: 100px;
+	text-align: center;
+	text-indent: 0;
+}
+
+.yllw a:hover {
+	opacity: 0.8;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.sidebar {
+	width: 15%;
+	float: left;
+	font-family: "os";
+	background: #424f63;
+	height: 100%;
+	margin-top: 40px;
+	position: fixed;
+	z-index: 9999;
+}
+
+.content {
+	width: 85%;
+	padding-top: 60px;
+	min-height: 100%;
+	float: right;
+	background: #eee;
+	padding-bottom: 50px;
+}
+
+.menu {
+	list-style: none;
+	width: 100%;
+}
+
+.menu li {
+	width: 100%;
+	text-indent: 10%;
+	padding: 10px 0;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #FFF;
+	font-size: 13px;
+}
+
+.menu a:hover {
+	font-family: "os_bold";
+}
+
+.sidebar h1 {
+	background: #3991cf;
+	font-size: 18px;
+	font-family: "bebas";
+	text-align: center;
+	color: #FFF;
+	padding: 10px 0;
+}
+
+.success-add {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 40px;
+	z-index: 9999999;
+	margin-top: 40px;
+	line-height: 40px;
+	background: #3bc86d;
+	text-indent: 5px;
+	color: #FFF;
+	font-family: "os";
+	font-size: 14px;
+}
+
+form input[type=checkbox] {
+	display: block;
+	margin-bottom: 20px;
+}
+
+form input[type=text], form input[type=email], form input[type=number], form input[type=file], form input[type=password], form select {
+	height: 40px;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 20px;
+	text-indent: 5px;
+}
+
+form input[type=submit] {
+	height: 40px;
+	width: 100px;
+	display: block;
+}
+
+form textarea {
+	height: 150px;
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+form .error {
+	border: 1px solid #f00;
+}
+
+form {
+	width: 80%;
+	background: #FFF;
+	margin: 0 auto;
+	padding: 5%;
+	font-family: 'os';
+	font-size: 13px;
+	color: #333;
+}
+
+.form-field {
+	width: 48%;
+	float: left;
+	margin-right: 1%;
+}
+
+.form-field:nth-child(3n + 1) {
+	/*clear: both;*/
+}
+
+.dataTables_wrapper {
+	width: 95% !important;
+	margin: 0 auto !important;
+	font-family: "os" !important;
+	background: #eee !important;
+	padding-bottom: 40px !important;
+	border: 1px solid #ddd;
+}
+
+.dataTable {
+	background: #FFF !important;
+	border-collapse: collapse !important;
+}
+
+.dataTables_length {
+	padding: 13px;
+	color: #FFF
+}
+
+.dataTables_filter {
+	background: #FFF;
+	padding: 9px;
+	background: #eee;
+}
+
+.dataTables_filter input {
+	border-radius: 10px;
+	border: 1px solid #ddd;
+	outline: 0;
+	padding: 5px;
+}
+
+.dataTables_info {
+	margin-top: 12px;
+	padding-left: 10px;
+	color: #666;
+	font-size: 13px;
+}
+
+.paging_full_numbers {
+	margin-top: 10px;
+}
+
+.paging_full_numbers a.paginate_button {
+	background: #fff;
+	border: 0 !important;
+	border-radius: 2px !important;
+}
+
+.paging_full_numbers a.paginate_button:hover,
+.paging_full_numbers a.paginate_active {
+	background: #f9585d;
+	color: #FFF !important;
+	border: 0 !important;
+}
+
+.dataTable td {
+	height: 50px;
+	font-size: 13px;
+	color: #555;
+}
+
+.dataTable tr {
+	background: #fff !important;
+	border-bottom: 1px solid #ddd;
+}
+
+.dataTable td.sorting_1  {
+	background: #e0ecff !important;
+}
+
+
+.dataTable th {
+	font-size: 12px;
+	height: 50px !important;
+	font-family: "Arial";
+	text-transform: uppercase;
+	color: #777;
+}
+
+.dataTable tr:hover {
+	background: #eee !important;
+}
+
+.dataTables_scrollBody tr[role=row] {
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+	padding: 0 !important;
+}
+
+.dataTables_scrollBody tr[role=row] * {
+	height: 0 !important;
+}
+
+.edit,
+.remove {
+	width: 100px;
+	padding: 10px;
+	color: #FFF;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.edit {
+	background: #3a96d2;
+	margin-right: 5px;
+}
+
+.remove {
+	background: #e03c3c;
+}

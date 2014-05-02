@@ -1,0 +1,18 @@
+Options -Indexes
+Options -MultiViews
+<IfModule mod_rewrite.c> 
+	RewriteEngine On
+
+	## Disabling any irregular request method ##
+	RewriteCond %{REQUEST_METHOD} !^(GET|HEAD|POST|PROPFIND|OPTIONS|PUT)$ [NC]
+	RewriteRule .* - [F,NS,L]
+
+	## Mapping all URIs except those that point to a valid file ##
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^(.*)$ index.php?path=$1 [L]
+
+	## Disabling direct access to PHP files ##
+	RewriteCond %{THE_REQUEST} ^[A-Z]+\ /[^?\ ]*\.php[/?\ ]
+	RewriteRule .*\.php$ index.php [L]
+</IfModule>

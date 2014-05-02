@@ -1,0 +1,142 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'os';
+	font-size: 14px;
+	color: #555;
+	outline: 0;
+
+	transition: 0.3s all;
+	-webkit-transition: 0.3s all;
+	-moz-transition: 0.3s all;
+}
+
+body, html {
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+	overflow: hidden;
+}
+
+.clear {
+	clear: both;	
+}
+
+.content {
+	display: table;
+	height: 100%;
+	width: 500px;
+	margin: 0 auto;
+}
+
+.login-form {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.login-form-content {
+	border-radius: 3px;
+	border: 1px solid #bbb;
+}
+
+header {
+	background: #eee;
+	border-radius: 3px 3px 0 0;
+	padding: 5px;
+	text-indent: 15px;
+}
+
+form {
+	background: #fff;
+	padding: 20px 0;
+}
+
+form input {
+	display: block;
+}
+
+form input[type=text], form input[type=password] {
+	border: 1px solid #ddd;
+	width: 460px;
+	margin-left: 20px;
+	height: 30px;
+	text-indent: 5px;
+	color: #777;
+	margin-bottom: 20px;
+}
+
+form input[type=submit] {
+	border-radius: 3px;
+	background: #2ca0d6;
+	color: #FFF;
+	border: 0;
+	width: 80px;
+	float: left;
+	height: 30px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+form input[type=submit]:hover {
+	opacity: 0.8;
+}
+
+.processing {
+	background: #c2e7f8 !important;
+}
+
+.error {
+	background: #e03c3c !important;
+	width: 120px !important;
+}
+
+.success {
+	background: #3bc86d !important;
+	width: 90px !important;
+}
+
+.remember-me {
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 20px;
+	width: auto;
+	float: left;
+	display: table;
+}
+
+.remember-me span {
+	display: table;
+	width: auto;
+	padding: 0 5px;
+	background: #eee;
+	border-radius: 3px;
+}
+
+.remember-me input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.remember-me span:after {
+	content: "Don't remember me";
+}
+
+.remember-me:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.remember-me input:checked + span:after {
+	content: "Remember me";
+}
+
+.remember-me input:checked + span {
+	background: #2ca0d6;
+	color: #FFF;
+}
